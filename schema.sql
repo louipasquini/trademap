@@ -1,0 +1,11 @@
+CREATE DATABASE <NAME>;
+USE <NAME>;
+
+CREATE TABLE timeline (
+    id integer PRIMARY KEY AUTO_INCREMENT,
+    title VARCHAR(255),
+    description VARCHAR(255),
+    body TEXT NOT NULL,
+    created_at TIMESTAMP NOT NULL DEFAULT NOW(),
+    updated_at TIMESTAMP NOT NULL DEFAULT NOW()
+);
